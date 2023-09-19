@@ -1,0 +1,1316 @@
+body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+    }
+
+    .half-black {
+      background-color: black;
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .half-black-a {
+      background-color: black;
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .half-grey {
+      background: linear-gradient(to bottom, #ffffff, #000000);
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .half-grey-a {
+      background: linear-gradient(to bottom, #000000, #ffffff);
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .half-white {
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      background-color: white;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .half-white-green {
+      padding-top: 2vh;
+      background-color: white;
+      width: 100vw;
+      height: 70vh;
+      overflow: hidden;
+    }
+    .half-black-green {
+      background-color: black;
+      padding-bottom: 2vh;
+      width: 100vw;
+      height: 115vh;
+      overflow: hidden;
+    }
+
+    
+    .half-full-grey{
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      background-color: #888988;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .my-name-thing {
+        text-align: left;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .imga{
+        opacity: 1;
+        animation: fadeIn 3s ease-in forwards;
+        max-width: 100%;
+        height: auto;
+    }
+    .imga2{
+        opacity: 1;
+        background-image: url("{% static '/images/IMG_3665.jpeg' %}");
+        background-size: contain;
+        animation: fadeIn 1.3s ease-in forwards;
+        width: 100vw;
+        min-width: 100%;
+        height: auto;
+        flex: 1;
+        float: right;
+    }
+    .about-text{
+      color: #fff;
+      font-size: 2em;
+      opacity: 1;
+      overflow: hidden;
+      overflow-y: auto;
+      padding-bottom: 0.5em;
+      padding-right: 1.2em;
+      flex: 1; 
+      margin-bottom: 1em;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    .about-text-outside{
+      z-index: 1;
+      position: absolute;
+      background-color: #000;
+      opacity: 75%;
+      width: 44%;
+      padding-left: 0.85em;
+      margin-left: 56%;
+      margin-bottom: 1em;
+      flex: 1;
+      top: 0;
+      bottom: 1em;
+      scrollbar-gutter: stable;
+    }
+    .about-container{
+      overflow: hidden;
+      position: relative;
+    }
+    .arrow-image{
+      width: 5em;
+      height: auto;
+      margin-left: 75%;
+    }
+    .vida{
+          width: 200%;
+          height: auto;
+    }
+    .container{
+      width: 100%;
+      height: 100%;
+    }
+    .wrapper{
+      display: inline-flex;
+      overflow: hidden;
+    }
+    .wrapper .static-text{
+      padding-top: 5vw;
+      padding-left: 3vw;
+      font-size: 7vw;
+      font-weight: 100;
+      color: #bd97e2;
+      overflow: hidden;
+      justify-content: left;
+      align-items: center;
+    }
+    .wrapper .dynamic-text{
+      margin-left: 1vw;
+      padding-top: 4vw;
+      justify-content: left;
+      align-items: center;
+    }
+    .dynamic-text li{
+      color: #161240;
+      font-size: 7vw;
+      font-weight: 100;
+      list-style: none;
+    }
+    .dynamic-text li span{
+      position: relative;
+    }
+    .dynamic-text li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      border-left: 2px solid #161240;
+      animation: typing 2.5s steps(20) infinite;
+    }
+    @keyframes typing{
+      80%{
+        left: 100%;
+      }
+      100%{
+        left: 100%;
+      }
+    }
+    .blockquote{
+      position: relative;
+      top: 20%;
+      bottom: 50%;
+      transform: translate(0, -50%);
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      background: #bd97e2; 
+      color: #fff;
+      border-radius: 7px;
+      box-sizing: border-box;
+    }
+    .blockquote--quoted::before{
+      content: "\201c";
+      margin-left: 5vh;
+      display: block;
+      margin-bottom: -16vh; 
+      font-size: 20vh;
+      color: #161240;
+    }
+    .blockquote__text{
+      font-family: cursive;
+      font-style: italic;
+      text-align: center;
+      font-size: 7vh;
+      font-weight: 400;
+      padding-left: 2vh;
+      padding-right: 2vh;
+    }
+    .blockquote__text--credit{
+      margin-left: 7vh;
+      font-family: cursive;
+      font-size: 4.5vh;
+      font-weight: 200;
+      color: #161240;
+    }
+    .about{
+      position: relative;
+      white-space: nowrap;
+      display: inline-flex;
+      margin: 5vh;
+      Letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 7em;
+      color: #888988;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0.04em;
+    }
+    .about-title{
+      display: flex;
+      width: 100%;
+      align-items: stretch;
+      background-color: #161240;
+      height: 13em;
+    }
+    .about-title-again{
+      display: flex;
+      align-items: stretch;
+      height: 13em;
+      padding: 1em;
+      background-color: #BD97E2;
+      opacity: 0.9;
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #BD97E2 40px ), repeating-linear-gradient( #16124055, #161240 );
+    }
+    .container-for-my-skills{
+      display: flex;
+      padding: 2em;
+      align-items: left;
+      overflow-x: scroll;
+    }
+    .me-black-n-white{
+      width: auto;
+      max-height: 40em;
+      z-index: 1;
+      margin-left: 2em;
+    }
+    .progress-container{
+      margin-right: 2em;
+    }
+
+    :root {
+      --clr-neon: hsl(270, 100%, 79%);
+      }
+
+      .neon-container{
+        margin-top: 5vh;
+        padding-top: 30vh;
+        margin-bottom: -10vh;
+        font-family: Arial, Helvetica, sans-serif ;
+        position: relative;
+        z-index: 5;
+      }
+    
+      .neon-button{
+        position: relative;
+        white-space: nowrap;
+        font-size: 3rem;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        border: var(--clr-neon) .12em solid;
+        border-radius: .4rem;
+        color: var(--clr-neon);
+        padding: 0.25em 2em;
+        margin-left: 13vw;
+        text-shadow: 0 0 0.5em var(--clr-neon);
+        box-shadow: 0 0 0.5em 0 var(--clr-neon),
+        inset 0 0 0.5em 0 var(--clr-neon);
+      }
+      .neon-button::before{
+        content: '';
+      }
+      .neon-button::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        box-shadow: 0 0 2em 0.5em var(--clr-neon);
+        opacity: 0;
+        transition: opacity 100ms linear;
+      }
+      .neon-button:hover,
+      .neon-button:focus{
+        background: var(--clr-neon);
+        color: #fff;
+        text-shadow: none;
+      }
+      .neon-button:hover::after{
+        opacity: 1;
+      }
+
+      .blog-container{
+        position: relative;
+      }
+      .green-me{
+        height: 60vh;
+        width: auto;
+        margin-top: -25vh;
+        padding-top: 2vh;
+      }
+      .portfolio{
+        position: relative;
+        color: #161240;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        transition: 0.5s;
+        padding: 0.3em 1em;
+        z-index: 10;
+      }
+      .portfolio:hover{
+        letter-spacing: 0.15em;
+        box-shadow: 0 0 0.5em #161240;
+        border: solid 0.2em #161240;
+      }
+      .portfolio::before{
+        content: '';
+        position: absolute;
+        inset: 0.3em;
+      }
+      .portfolio-container{
+        position: absolute;
+        padding-right: 12vw;
+        padding-top: 5vh;
+        right: 0;
+        bottom: -30vh;
+        padding-bottom: 5vh;
+        cursor: pointer;
+      }
+      a span {
+        position: relative;
+        z-index: 1;
+      }
+      a i{
+        position: absolute;
+        inset: 0;
+        display: block;
+      }
+      a i::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 70%;
+        width: 1.2em;
+        height: 0.2em;
+        background-color: #fff;
+        margin-top: -0.2em;
+        transform: translateX(-50%) skewX(325deg);
+        transition: 1s;
+      }
+      a:hover i::before{
+        width: 2em;
+        left: 20%;
+      }
+
+      a i::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        width: 1.2em;
+        height: 0.2em;
+        background-color: #fff;
+        margin-bottom: -0.2em;
+        transform: translateX(-50%) skewX(325deg);
+        transition: 1s;
+      }
+      a:hover i::after{
+        width: 2em;
+        left: 80%;
+      }
+
+
+      .social-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .cont1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+      .cont2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        padding-left: 15em;
+        padding-right: 15em;
+      }
+      .cont3{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+      .social-icons{
+        height: 9em;
+        width: 9em;
+        padding: 1em 1em 1em 1em;
+      }
+      .prof-image{
+        height: 35em;
+        width: auto;
+        padding-right: 3vh;
+        padding-left: 5vh;
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+        padding-top: 10em;
+      }
+      .github{
+        margin-bottom: 10em;
+        margin-top:4em;
+        margin-bottom: -10em;
+      }
+      .insta{
+        margin-bottom: 10em;
+        margin-top: 25em;
+      }
+      .linkedin{
+        align-items: center;
+        margin-bottom: -10em;
+      }
+      .facebook{
+        margin-bottom: 10em;
+        margin-top: 4em;
+        margin-bottom: -10em;
+      }
+      .twitter{
+        margin-bottom: 10em;
+        margin-top: 25em;
+      }
+      .space1,
+      .space3,
+      .space2{
+        flex-grow: 1;
+      }
+      .social-circle{
+        transform-origin: calc(4.5em 4.5em);
+        animation: rotateAnimation 4s infinite linear;
+      }
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+
+    .in-touch{
+      color: #bd97e2;
+      font-weight: 100;
+      letter-spacing: 0.20em;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 1em;
+      padding: 2vw 4vw;
+      width: 55vw;
+      height: auto;
+      background: #161240;
+      border-radius: 1.2em;
+      border: solid 0.3em #BD97E2;
+
+    }
+    form input, form textarea{
+      border: 0;
+      margin: 1vh 0;
+      padding: 2vh; 
+      outline: none;
+      background: #f5f5f5;
+      font-size: 1em;
+      border-radius: 0.25em;
+    }
+    form button{
+      padding: 2vh;
+      background: #BD97E2;
+      color: #fff;
+      font-size: 1.5em;
+      border: 0;
+      cursor: pointer;
+      margin: 1em auto 0;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      border-radius: 2.2em;
+    }
+
+    .contact-me-container{
+      z-index: 1;
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+
+    .half-white-image{
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+    .magicpattern { 
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: repeat;
+      background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23161240%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 mask=%22url(%23b)%22%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m91.141 0 45.467 26.25v52.5L91.14 105 45.675 78.75v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2bc%22 d=%22m182.491 0 45.467 26.25v52.5L182.49 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e279%22 d=%22m273.841 0 45.467 26.25v52.5L273.84 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e265%22 d=%22m365.191 0 45.467 26.25v52.5L365.19 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e209%22 d=%22m456.541 0 45.467 26.25v52.5L456.54 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m547.891 0 45.467 26.25v52.5L547.89 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 0 45.467 26.25v52.5L639.24 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e224%22 d=%22m730.591 0 45.467 26.25v52.5L730.59 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21d%22 d=%22m821.941 0 45.467 26.25v52.5L821.94 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m913.291 0 45.467 26.25v52.5L913.29 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e214%22 d=%22m1004.641 0 45.467 26.25v52.5L1004.64 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 0 45.467 26.25v52.5L1095.99 105l-45.466-26.25v-52.5ZM1187.341 0l45.467 26.25v52.5L1187.34 105l-45.466-26.25v-52.5ZM1278.691 0l45.467 26.25v52.5L1278.69 105l-45.466-26.25v-52.5ZM1370.041 0l45.467 26.25v52.5L1370.04 105l-45.466-26.25v-52.5ZM1461.391 0l45.467 26.25v52.5L1461.39 105l-45.466-26.25v-52.5ZM1552.741 0l45.467 26.25v52.5L1552.74 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e289%22 d=%22m1644.091 0 45.467 26.25v52.5L1644.09 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1735.441 0 45.467 26.25v52.5L1735.44 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28f%22 d=%22m1826.791 0 45.467 26.25v52.5L1826.79 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a4%22 d=%22m1918.141 0 45.467 26.25v52.5L1918.14 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e204%22 d=%22m2009.491 0 45.467 26.25v52.5L2009.49 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27d%22 d=%22m2100.841 0 45.467 26.25v52.5L2100.84 105l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e289%22 d=%22M45.466 78.75 90.933 105v52.5l-45.467 26.25L0 157.5V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M136.816 78.75 182.283 105v52.5l-45.467 26.25L91.35 157.5V105ZM228.166 78.75 273.633 105v52.5l-45.467 26.25L182.7 157.5V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20d%22 d=%22M319.516 78.75 364.983 105v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M410.866 78.75 456.333 105v52.5l-45.467 26.25L365.4 157.5V105ZM502.216 78.75 547.683 105v52.5l-45.467 26.25-45.466-26.25V105ZM593.566 78.75 639.033 105v52.5l-45.467 26.25L548.1 157.5V105ZM684.916 78.75 730.383 105v52.5l-45.467 26.25-45.466-26.25V105ZM776.266 78.75 821.733 105v52.5l-45.467 26.25L730.8 157.5V105ZM867.616 78.75 913.083 105v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b7%22 d=%22m958.966 78.75 45.467 26.25v52.5l-45.467 26.25L913.5 157.5V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1050.316 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105ZM1141.666 78.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105ZM1233.016 78.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e269%22 d=%22m1324.366 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105ZM1507.066 78.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28c%22 d=%22m1598.416 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20f%22 d=%22m1781.116 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22c%22 d=%22m1872.466 78.75 45.467 26.25v52.5l-45.467 26.25L1827 157.5V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e221%22 d=%22m1963.816 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 78.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V105ZM91.141 157.5l45.467 26.25v52.5L91.14 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e256%22 d=%22m182.491 157.5 45.467 26.25v52.5L182.49 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e217%22 d=%22m273.841 157.5 45.467 26.25v52.5L273.84 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m365.191 157.5 45.467 26.25v52.5L365.19 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27d%22 d=%22m456.541 157.5 45.467 26.25v52.5L456.54 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 157.5 45.467 26.25v52.5L547.89 262.5l-45.466-26.25v-52.5ZM639.241 157.5l45.467 26.25v52.5L639.24 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e251%22 d=%22m730.591 157.5 45.467 26.25v52.5L730.59 262.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m821.941 157.5 45.467 26.25v52.5L821.94 262.5l-45.466-26.25v-52.5ZM913.291 157.5l45.467 26.25v52.5L913.29 262.5l-45.466-26.25v-52.5ZM1004.641 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1095.991 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26b%22 d=%22m1370.041 157.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1461.391 157.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e204%22 d=%22m1552.741 157.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1644.091 157.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2100.841 157.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e275%22 d=%22m45.466 236.25 45.467 26.25V315l-45.467 26.25L0 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e259%22 d=%22m136.816 236.25 45.467 26.25V315l-45.467 26.25L91.35 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m228.166 236.25 45.467 26.25V315l-45.467 26.25L182.7 315v-52.5ZM319.516 236.25l45.467 26.25V315l-45.467 26.25L274.05 315v-52.5ZM410.866 236.25l45.467 26.25V315l-45.467 26.25L365.4 315v-52.5ZM502.216 236.25l45.467 26.25V315l-45.467 26.25L456.75 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m593.566 236.25 45.467 26.25V315l-45.467 26.25L548.1 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27d%22 d=%22m684.916 236.25 45.467 26.25V315l-45.467 26.25L639.45 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a5%22 d=%22m776.266 236.25 45.467 26.25V315l-45.467 26.25L730.8 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e295%22 d=%22m867.616 236.25 45.467 26.25V315l-45.467 26.25L822.15 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m958.966 236.25 45.467 26.25V315l-45.467 26.25L913.5 315v-52.5ZM1050.316 236.25l45.467 26.25V315l-45.467 26.25L1004.85 315v-52.5ZM1141.666 236.25l45.467 26.25V315l-45.467 26.25L1096.2 315v-52.5ZM1233.016 236.25l45.467 26.25V315l-45.467 26.25L1187.55 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e232%22 d=%22m1324.366 236.25 45.467 26.25V315l-45.467 26.25L1278.9 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e249%22 d=%22m1415.716 236.25 45.467 26.25V315l-45.467 26.25L1370.25 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1507.066 236.25 45.467 26.25V315l-45.467 26.25L1461.6 315v-52.5ZM1598.416 236.25l45.467 26.25V315l-45.467 26.25L1552.95 315v-52.5ZM1689.766 236.25l45.467 26.25V315l-45.467 26.25L1644.3 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e285%22 d=%22m1781.116 236.25 45.467 26.25V315l-45.467 26.25L1735.65 315v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1872.466 236.25 45.467 26.25V315l-45.467 26.25L1827 315v-52.5ZM1963.816 236.25l45.467 26.25V315l-45.467 26.25L1918.35 315v-52.5ZM2055.166 236.25l45.467 26.25V315l-45.467 26.25L2009.7 315v-52.5ZM91.141 315l45.467 26.25v52.5L91.14 420l-45.466-26.25v-52.5ZM182.491 315l45.467 26.25v52.5L182.49 420l-45.466-26.25v-52.5ZM273.841 315l45.467 26.25v52.5L273.84 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e250%22 d=%22m365.191 315 45.467 26.25v52.5L365.19 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29e%22 d=%22m456.541 315 45.467 26.25v52.5L456.54 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e210%22 d=%22m547.891 315 45.467 26.25v52.5L547.89 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e275%22 d=%22m639.241 315 45.467 26.25v52.5L639.24 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m730.591 315 45.467 26.25v52.5L730.59 420l-45.466-26.25v-52.5ZM821.941 315l45.467 26.25v52.5L821.94 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e208%22 d=%22m913.291 315 45.467 26.25v52.5L913.29 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 315 45.467 26.25v52.5L1004.64 420l-45.466-26.25v-52.5ZM1095.991 315l45.467 26.25v52.5L1095.99 420l-45.466-26.25v-52.5ZM1187.341 315l45.467 26.25v52.5L1187.34 420l-45.466-26.25v-52.5ZM1278.691 315l45.467 26.25v52.5L1278.69 420l-45.466-26.25v-52.5ZM1370.041 315l45.467 26.25v52.5L1370.04 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25f%22 d=%22m1461.391 315 45.467 26.25v52.5L1461.39 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 315 45.467 26.25v52.5L1552.74 420l-45.466-26.25v-52.5ZM1644.091 315l45.467 26.25v52.5L1644.09 420l-45.466-26.25v-52.5ZM1735.441 315l45.467 26.25v52.5L1735.44 420l-45.466-26.25v-52.5ZM1826.791 315l45.467 26.25v52.5L1826.79 420l-45.466-26.25v-52.5ZM1918.141 315l45.467 26.25v52.5L1918.14 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e215%22 d=%22m2009.491 315 45.467 26.25v52.5L2009.49 420l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 315 45.467 26.25v52.5L2100.84 420l-45.466-26.25v-52.5ZM45.466 393.75 90.933 420v52.5l-45.467 26.25L0 472.5V420ZM136.816 393.75 182.283 420v52.5l-45.467 26.25L91.35 472.5V420ZM228.166 393.75 273.633 420v52.5l-45.467 26.25L182.7 472.5V420ZM319.516 393.75 364.983 420v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e256%22 d=%22M410.866 393.75 456.333 420v52.5l-45.467 26.25L365.4 472.5V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M502.216 393.75 547.683 420v52.5l-45.467 26.25-45.466-26.25V420ZM593.566 393.75 639.033 420v52.5l-45.467 26.25L548.1 472.5V420ZM684.916 393.75 730.383 420v52.5l-45.467 26.25-45.466-26.25V420ZM776.266 393.75 821.733 420v52.5l-45.467 26.25L730.8 472.5V420ZM867.616 393.75 913.083 420v52.5l-45.467 26.25-45.466-26.25V420ZM958.966 393.75l45.467 26.25v52.5l-45.467 26.25L913.5 472.5V420ZM1050.316 393.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420ZM1141.666 393.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e242%22 d=%22m1233.016 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24e%22 d=%22m1324.366 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e293%22 d=%22m1507.066 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e223%22 d=%22m1598.416 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420ZM1781.116 393.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420ZM1872.466 393.75l45.467 26.25v52.5l-45.467 26.25L1827 472.5V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e219%22 d=%22m1963.816 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 393.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V420Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e260%22 d=%22m91.141 472.5 45.467 26.25v52.5L91.14 577.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 472.5 45.467 26.25v52.5L182.49 577.5l-45.466-26.25v-52.5ZM273.841 472.5l45.467 26.25v52.5L273.84 577.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e286%22 d=%22m365.191 472.5 45.467 26.25v52.5L365.19 577.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m456.541 472.5 45.467 26.25v52.5L456.54 577.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e201%22 d=%22m547.891 472.5 45.467 26.25v52.5L547.89 577.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 472.5 45.467 26.25v52.5L639.24 577.5l-45.466-26.25v-52.5ZM730.591 472.5l45.467 26.25v52.5L730.59 577.5l-45.466-26.25v-52.5ZM821.941 472.5l45.467 26.25v52.5L821.94 577.5l-45.466-26.25v-52.5ZM913.291 472.5l45.467 26.25v52.5L913.29 577.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24f%22 d=%22m1004.641 472.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 472.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1461.391 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e201%22 d=%22m1552.741 472.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1644.091 472.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2100.841 472.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 551.25l45.467 26.25V630l-45.467 26.25L0 630v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e296%22 d=%22m136.816 551.25 45.467 26.25V630l-45.467 26.25L91.35 630v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m228.166 551.25 45.467 26.25V630l-45.467 26.25L182.7 630v-52.5ZM319.516 551.25l45.467 26.25V630l-45.467 26.25L274.05 630v-52.5ZM410.866 551.25l45.467 26.25V630l-45.467 26.25L365.4 630v-52.5ZM502.216 551.25l45.467 26.25V630l-45.467 26.25L456.75 630v-52.5ZM593.566 551.25l45.467 26.25V630l-45.467 26.25L548.1 630v-52.5ZM684.916 551.25l45.467 26.25V630l-45.467 26.25L639.45 630v-52.5ZM776.266 551.25l45.467 26.25V630l-45.467 26.25L730.8 630v-52.5ZM867.616 551.25l45.467 26.25V630l-45.467 26.25L822.15 630v-52.5ZM958.966 551.25l45.467 26.25V630l-45.467 26.25L913.5 630v-52.5ZM1050.316 551.25l45.467 26.25V630l-45.467 26.25L1004.85 630v-52.5ZM1141.666 551.25l45.467 26.25V630l-45.467 26.25L1096.2 630v-52.5ZM1233.016 551.25l45.467 26.25V630l-45.467 26.25L1187.55 630v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24f%22 d=%22m1324.366 551.25 45.467 26.25V630l-45.467 26.25L1278.9 630v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 551.25 45.467 26.25V630l-45.467 26.25L1370.25 630v-52.5ZM1507.066 551.25l45.467 26.25V630l-45.467 26.25L1461.6 630v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b4%22 d=%22m1598.416 551.25 45.467 26.25V630l-45.467 26.25L1552.95 630v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 551.25 45.467 26.25V630l-45.467 26.25L1644.3 630v-52.5ZM1781.116 551.25l45.467 26.25V630l-45.467 26.25L1735.65 630v-52.5ZM1872.466 551.25l45.467 26.25V630l-45.467 26.25L1827 630v-52.5ZM1963.816 551.25l45.467 26.25V630l-45.467 26.25L1918.35 630v-52.5ZM2055.166 551.25l45.467 26.25V630l-45.467 26.25L2009.7 630v-52.5ZM91.141 630l45.467 26.25v52.5L91.14 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24d%22 d=%22m182.491 630 45.467 26.25v52.5L182.49 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e203%22 d=%22m273.841 630 45.467 26.25v52.5L273.84 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e251%22 d=%22m365.191 630 45.467 26.25v52.5L365.19 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e281%22 d=%22m456.541 630 45.467 26.25v52.5L456.54 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 630 45.467 26.25v52.5L547.89 735l-45.466-26.25v-52.5ZM639.241 630l45.467 26.25v52.5L639.24 735l-45.466-26.25v-52.5ZM730.591 630l45.467 26.25v52.5L730.59 735l-45.466-26.25v-52.5ZM821.941 630l45.467 26.25v52.5L821.94 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25a%22 d=%22m913.291 630 45.467 26.25v52.5L913.29 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 630 45.467 26.25v52.5L1004.64 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21a%22 d=%22m1095.991 630 45.467 26.25v52.5L1095.99 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1187.341 630 45.467 26.25v52.5L1187.34 735l-45.466-26.25v-52.5ZM1278.691 630l45.467 26.25v52.5L1278.69 735l-45.466-26.25v-52.5ZM1370.041 630l45.467 26.25v52.5L1370.04 735l-45.466-26.25v-52.5ZM1461.391 630l45.467 26.25v52.5L1461.39 735l-45.466-26.25v-52.5ZM1552.741 630l45.467 26.25v52.5L1552.74 735l-45.466-26.25v-52.5ZM1644.091 630l45.467 26.25v52.5L1644.09 735l-45.466-26.25v-52.5ZM1735.441 630l45.467 26.25v52.5L1735.44 735l-45.466-26.25v-52.5ZM1826.791 630l45.467 26.25v52.5L1826.79 735l-45.466-26.25v-52.5ZM1918.141 630l45.467 26.25v52.5L1918.14 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26f%22 d=%22m2009.491 630 45.467 26.25v52.5L2009.49 735l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 630 45.467 26.25v52.5L2100.84 735l-45.466-26.25v-52.5ZM45.466 708.75 90.933 735v52.5l-45.467 26.25L0 787.5V735ZM136.816 708.75 182.283 735v52.5l-45.467 26.25L91.35 787.5V735ZM228.166 708.75 273.633 735v52.5l-45.467 26.25L182.7 787.5V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e265%22 d=%22M319.516 708.75 364.983 735v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M410.866 708.75 456.333 735v52.5l-45.467 26.25L365.4 787.5V735ZM502.216 708.75 547.683 735v52.5l-45.467 26.25-45.466-26.25V735ZM593.566 708.75 639.033 735v52.5l-45.467 26.25L548.1 787.5V735ZM684.916 708.75 730.383 735v52.5l-45.467 26.25-45.466-26.25V735ZM776.266 708.75 821.733 735v52.5l-45.467 26.25L730.8 787.5V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e267%22 d=%22M867.616 708.75 913.083 735v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m958.966 708.75 45.467 26.25v52.5l-45.467 26.25L913.5 787.5V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25c%22 d=%22m1050.316 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1141.666 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20f%22 d=%22m1233.016 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735ZM1415.716 708.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735ZM1507.066 708.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22b%22 d=%22m1598.416 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735ZM1781.116 708.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e282%22 d=%22m1872.466 708.75 45.467 26.25v52.5l-45.467 26.25L1827 787.5V735Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 708.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735ZM2055.166 708.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V735ZM91.141 787.5l45.467 26.25v52.5L91.14 892.5l-45.466-26.25v-52.5ZM182.491 787.5l45.467 26.25v52.5L182.49 892.5l-45.466-26.25v-52.5ZM273.841 787.5l45.467 26.25v52.5L273.84 892.5l-45.466-26.25v-52.5ZM365.191 787.5l45.467 26.25v52.5L365.19 892.5l-45.466-26.25v-52.5ZM456.541 787.5l45.467 26.25v52.5L456.54 892.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2aa%22 d=%22m547.891 787.5 45.467 26.25v52.5L547.89 892.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 787.5 45.467 26.25v52.5L639.24 892.5l-45.466-26.25v-52.5ZM730.591 787.5l45.467 26.25v52.5L730.59 892.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e290%22 d=%22m821.941 787.5 45.467 26.25v52.5L821.94 892.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ac%22 d=%22m913.291 787.5 45.467 26.25v52.5L913.29 892.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1095.991 787.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2aa%22 d=%22m1187.341 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 787.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e235%22 d=%22m1461.391 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1644.091 787.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25b%22 d=%22m1735.441 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25f%22 d=%22m1826.791 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1918.141 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e243%22 d=%22m2009.491 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 787.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 866.25l45.467 26.25V945l-45.467 26.25L0 945v-52.5ZM136.816 866.25l45.467 26.25V945l-45.467 26.25L91.35 945v-52.5ZM228.166 866.25l45.467 26.25V945l-45.467 26.25L182.7 945v-52.5ZM319.516 866.25l45.467 26.25V945l-45.467 26.25L274.05 945v-52.5ZM410.866 866.25l45.467 26.25V945l-45.467 26.25L365.4 945v-52.5ZM502.216 866.25l45.467 26.25V945l-45.467 26.25L456.75 945v-52.5ZM593.566 866.25l45.467 26.25V945l-45.467 26.25L548.1 945v-52.5ZM684.916 866.25l45.467 26.25V945l-45.467 26.25L639.45 945v-52.5ZM776.266 866.25l45.467 26.25V945l-45.467 26.25L730.8 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b0%22 d=%22m867.616 866.25 45.467 26.25V945l-45.467 26.25L822.15 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m958.966 866.25 45.467 26.25V945l-45.467 26.25L913.5 945v-52.5ZM1050.316 866.25l45.467 26.25V945l-45.467 26.25L1004.85 945v-52.5ZM1141.666 866.25l45.467 26.25V945l-45.467 26.25L1096.2 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22c%22 d=%22m1233.016 866.25 45.467 26.25V945l-45.467 26.25L1187.55 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 866.25 45.467 26.25V945l-45.467 26.25L1278.9 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23b%22 d=%22m1415.716 866.25 45.467 26.25V945l-45.467 26.25L1370.25 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1507.066 866.25 45.467 26.25V945l-45.467 26.25L1461.6 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24e%22 d=%22m1598.416 866.25 45.467 26.25V945l-45.467 26.25L1552.95 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e263%22 d=%22m1689.766 866.25 45.467 26.25V945l-45.467 26.25L1644.3 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1781.116 866.25 45.467 26.25V945l-45.467 26.25L1735.65 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e269%22 d=%22m1872.466 866.25 45.467 26.25V945l-45.467 26.25L1827 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21a%22 d=%22m1963.816 866.25 45.467 26.25V945l-45.467 26.25L1918.35 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 866.25 45.467 26.25V945l-45.467 26.25L2009.7 945v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e287%22 d=%22m91.141 945 45.467 26.25v52.5L91.14 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 945 45.467 26.25v52.5L182.49 1050l-45.466-26.25v-52.5ZM273.841 945l45.467 26.25v52.5L273.84 1050l-45.466-26.25v-52.5ZM365.191 945l45.467 26.25v52.5L365.19 1050l-45.466-26.25v-52.5ZM456.541 945l45.467 26.25v52.5L456.54 1050l-45.466-26.25v-52.5ZM547.891 945l45.467 26.25v52.5L547.89 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26b%22 d=%22m639.241 945 45.467 26.25v52.5L639.24 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m730.591 945 45.467 26.25v52.5L730.59 1050l-45.466-26.25v-52.5ZM821.941 945l45.467 26.25v52.5L821.94 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e207%22 d=%22m913.291 945 45.467 26.25v52.5L913.29 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 945 45.467 26.25v52.5L1004.64 1050l-45.466-26.25v-52.5ZM1095.991 945l45.467 26.25v52.5L1095.99 1050l-45.466-26.25v-52.5ZM1187.341 945l45.467 26.25v52.5L1187.34 1050l-45.466-26.25v-52.5ZM1278.691 945l45.467 26.25v52.5L1278.69 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a6%22 d=%22m1370.041 945 45.467 26.25v52.5L1370.04 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e214%22 d=%22m1461.391 945 45.467 26.25v52.5L1461.39 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 945 45.467 26.25v52.5L1552.74 1050l-45.466-26.25v-52.5ZM1644.091 945l45.467 26.25v52.5L1644.09 1050l-45.466-26.25v-52.5ZM1735.441 945l45.467 26.25v52.5L1735.44 1050l-45.466-26.25v-52.5ZM1826.791 945l45.467 26.25v52.5L1826.79 1050l-45.466-26.25v-52.5ZM1918.141 945l45.467 26.25v52.5L1918.14 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e285%22 d=%22m2009.491 945 45.467 26.25v52.5L2009.49 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 945 45.467 26.25v52.5L2100.84 1050l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a9%22 d=%22M45.466 1023.75 90.933 1050v52.5l-45.467 26.25L0 1102.5V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m136.816 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM228.166 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23e%22 d=%22m319.516 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23c%22 d=%22m410.866 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e258%22 d=%22m593.566 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m684.916 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM776.266 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e271%22 d=%22m867.616 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m958.966 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1050.316 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1141.666 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1233.016 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1324.366 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1415.716 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1507.066 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050ZM1598.416 1023.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e205%22 d=%22m1689.766 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e206%22 d=%22m1781.116 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e261%22 d=%22m1872.466 1023.75 45.467 26.25v52.5l-45.467 26.25L1827 1102.5V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ad%22 d=%22m1963.816 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 1023.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1050Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e236%22 d=%22m91.141 1102.5 45.467 26.25v52.5L91.14 1207.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e289%22 d=%22m365.191 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m456.541 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM547.891 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM639.241 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM821.941 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21b%22 d=%22m913.291 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1095.991 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e218%22 d=%22m1461.391 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1644.091 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 1102.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e267%22 d=%22m1918.141 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2009.491 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23e%22 d=%22m2100.841 1102.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m45.466 1181.25 45.467 26.25v52.5l-45.467 26.25L0 1260v-52.5ZM136.816 1181.25l45.467 26.25v52.5l-45.467 26.25L91.35 1260v-52.5ZM228.166 1181.25l45.467 26.25v52.5l-45.467 26.25L182.7 1260v-52.5ZM319.516 1181.25l45.467 26.25v52.5l-45.467 26.25L274.05 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26b%22 d=%22m410.866 1181.25 45.467 26.25v52.5l-45.467 26.25L365.4 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23b%22 d=%22m502.216 1181.25 45.467 26.25v52.5l-45.467 26.25L456.75 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m593.566 1181.25 45.467 26.25v52.5l-45.467 26.25L548.1 1260v-52.5ZM684.916 1181.25l45.467 26.25v52.5l-45.467 26.25L639.45 1260v-52.5ZM776.266 1181.25l45.467 26.25v52.5l-45.467 26.25L730.8 1260v-52.5ZM867.616 1181.25l45.467 26.25v52.5l-45.467 26.25L822.15 1260v-52.5ZM958.966 1181.25l45.467 26.25v52.5l-45.467 26.25L913.5 1260v-52.5ZM1050.316 1181.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 1181.25l45.467 26.25v52.5l-45.467 26.25L1096.2 1260v-52.5ZM1233.016 1181.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28f%22 d=%22m1324.366 1181.25 45.467 26.25v52.5l-45.467 26.25L1278.9 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 1181.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e201%22 d=%22m1507.066 1181.25 45.467 26.25v52.5l-45.467 26.25L1461.6 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1598.416 1181.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1689.766 1181.25l45.467 26.25v52.5l-45.467 26.25L1644.3 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22c%22 d=%22m1781.116 1181.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1872.466 1181.25 45.467 26.25v52.5l-45.467 26.25L1827 1260v-52.5ZM1963.816 1181.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e291%22 d=%22m2055.166 1181.25 45.467 26.25v52.5l-45.467 26.25L2009.7 1260v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m91.141 1260 45.467 26.25v52.5L91.14 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e206%22 d=%22m182.491 1260 45.467 26.25v52.5L182.49 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m273.841 1260 45.467 26.25v52.5L273.84 1365l-45.466-26.25v-52.5ZM365.191 1260l45.467 26.25v52.5L365.19 1365l-45.466-26.25v-52.5ZM456.541 1260l45.467 26.25v52.5L456.54 1365l-45.466-26.25v-52.5ZM547.891 1260l45.467 26.25v52.5L547.89 1365l-45.466-26.25v-52.5ZM639.241 1260l45.467 26.25v52.5L639.24 1365l-45.466-26.25v-52.5ZM730.591 1260l45.467 26.25v52.5L730.59 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ae%22 d=%22m821.941 1260 45.467 26.25v52.5L821.94 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28a%22 d=%22m913.291 1260 45.467 26.25v52.5L913.29 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e227%22 d=%22m1004.641 1260 45.467 26.25v52.5L1004.64 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 1260 45.467 26.25v52.5L1095.99 1365l-45.466-26.25v-52.5ZM1187.341 1260l45.467 26.25v52.5L1187.34 1365l-45.466-26.25v-52.5ZM1278.691 1260l45.467 26.25v52.5L1278.69 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b3%22 d=%22m1370.041 1260 45.467 26.25v52.5L1370.04 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e282%22 d=%22m1461.391 1260 45.467 26.25v52.5L1461.39 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 1260 45.467 26.25v52.5L1552.74 1365l-45.466-26.25v-52.5ZM1644.091 1260l45.467 26.25v52.5L1644.09 1365l-45.466-26.25v-52.5ZM1735.441 1260l45.467 26.25v52.5L1735.44 1365l-45.466-26.25v-52.5ZM1826.791 1260l45.467 26.25v52.5L1826.79 1365l-45.466-26.25v-52.5ZM1918.141 1260l45.467 26.25v52.5L1918.14 1365l-45.466-26.25v-52.5ZM2009.491 1260l45.467 26.25v52.5L2009.49 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b5%22 d=%22m2100.841 1260 45.467 26.25v52.5L2100.84 1365l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M45.466 1338.75 90.933 1365v52.5l-45.467 26.25L0 1417.5V1365ZM136.816 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20c%22 d=%22m228.166 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM410.866 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28b%22 d=%22m502.216 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27d%22 d=%22m593.566 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m684.916 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM776.266 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM867.616 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM958.966 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM1050.316 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM1141.666 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e246%22 d=%22m1233.016 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM1415.716 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM1507.066 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM1598.416 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM1689.766 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e221%22 d=%22m1781.116 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e263%22 d=%22m1872.466 1338.75 45.467 26.25v52.5l-45.467 26.25L1827 1417.5V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 1338.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365ZM2055.166 1338.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1365Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24a%22 d=%22m91.141 1417.5 45.467 26.25v52.5L91.14 1522.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM456.541 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM547.891 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM639.241 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM821.941 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM913.291 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1004.641 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1095.991 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e225%22 d=%22m1187.341 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1461.391 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1552.741 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e220%22 d=%22m1644.091 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1735.441 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 1417.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20b%22 d=%22m2009.491 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 1417.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28d%22 d=%22m45.466 1496.25 45.467 26.25v52.5l-45.467 26.25L0 1575v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m136.816 1496.25 45.467 26.25v52.5l-45.467 26.25L91.35 1575v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e295%22 d=%22m228.166 1496.25 45.467 26.25v52.5l-45.467 26.25L182.7 1575v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 1496.25 45.467 26.25v52.5l-45.467 26.25L274.05 1575v-52.5ZM410.866 1496.25l45.467 26.25v52.5l-45.467 26.25L365.4 1575v-52.5ZM502.216 1496.25l45.467 26.25v52.5l-45.467 26.25L456.75 1575v-52.5ZM593.566 1496.25l45.467 26.25v52.5l-45.467 26.25L548.1 1575v-52.5ZM684.916 1496.25l45.467 26.25v52.5l-45.467 26.25L639.45 1575v-52.5ZM776.266 1496.25l45.467 26.25v52.5l-45.467 26.25L730.8 1575v-52.5ZM867.616 1496.25l45.467 26.25v52.5l-45.467 26.25L822.15 1575v-52.5ZM958.966 1496.25l45.467 26.25v52.5l-45.467 26.25L913.5 1575v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29f%22 d=%22m1050.316 1496.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1141.666 1496.25 45.467 26.25v52.5l-45.467 26.25L1096.2 1575v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21a%22 d=%22m1233.016 1496.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 1496.25 45.467 26.25v52.5l-45.467 26.25L1278.9 1575v-52.5ZM1415.716 1496.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1507.066 1496.25l45.467 26.25v52.5l-45.467 26.25L1461.6 1575v-52.5ZM1598.416 1496.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1689.766 1496.25l45.467 26.25v52.5l-45.467 26.25L1644.3 1575v-52.5ZM1781.116 1496.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1872.466 1496.25l45.467 26.25v52.5l-45.467 26.25L1827 1575v-52.5ZM1963.816 1496.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2055.166 1496.25l45.467 26.25v52.5l-45.467 26.25L2009.7 1575v-52.5ZM91.141 1575l45.467 26.25v52.5L91.14 1680l-45.466-26.25v-52.5ZM182.491 1575l45.467 26.25v52.5L182.49 1680l-45.466-26.25v-52.5ZM273.841 1575l45.467 26.25v52.5L273.84 1680l-45.466-26.25v-52.5ZM365.191 1575l45.467 26.25v52.5L365.19 1680l-45.466-26.25v-52.5ZM456.541 1575l45.467 26.25v52.5L456.54 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e277%22 d=%22m547.891 1575 45.467 26.25v52.5L547.89 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 1575 45.467 26.25v52.5L639.24 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21f%22 d=%22m730.591 1575 45.467 26.25v52.5L730.59 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m821.941 1575 45.467 26.25v52.5L821.94 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e249%22 d=%22m913.291 1575 45.467 26.25v52.5L913.29 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e227%22 d=%22m1004.641 1575 45.467 26.25v52.5L1004.64 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 1575 45.467 26.25v52.5L1095.99 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b3%22 d=%22m1187.341 1575 45.467 26.25v52.5L1187.34 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 1575 45.467 26.25v52.5L1278.69 1680l-45.466-26.25v-52.5ZM1370.041 1575l45.467 26.25v52.5L1370.04 1680l-45.466-26.25v-52.5ZM1461.391 1575l45.467 26.25v52.5L1461.39 1680l-45.466-26.25v-52.5ZM1552.741 1575l45.467 26.25v52.5L1552.74 1680l-45.466-26.25v-52.5ZM1644.091 1575l45.467 26.25v52.5L1644.09 1680l-45.466-26.25v-52.5ZM1735.441 1575l45.467 26.25v52.5L1735.44 1680l-45.466-26.25v-52.5ZM1826.791 1575l45.467 26.25v52.5L1826.79 1680l-45.466-26.25v-52.5ZM1918.141 1575l45.467 26.25v52.5L1918.14 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29a%22 d=%22m2009.491 1575 45.467 26.25v52.5L2009.49 1680l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 1575 45.467 26.25v52.5L2100.84 1680l-45.466-26.25v-52.5ZM45.466 1653.75 90.933 1680v52.5l-45.467 26.25L0 1732.5V1680ZM136.816 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e275%22 d=%22m228.166 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM410.866 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM502.216 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM593.566 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM684.916 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e280%22 d=%22m776.266 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29b%22 d=%22m867.616 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m958.966 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM1050.316 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM1141.666 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM1233.016 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM1324.366 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM1415.716 1653.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e228%22 d=%22m1507.066 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1598.416 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e267%22 d=%22m1689.766 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1781.116 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680ZM1872.466 1653.75l45.467 26.25v52.5l-45.467 26.25L1827 1732.5V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e294%22 d=%22m1963.816 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e203%22 d=%22m2055.166 1653.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1680Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a1%22 d=%22m91.141 1732.5 45.467 26.25v52.5L91.14 1837.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e205%22 d=%22m365.191 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2aa%22 d=%22m456.541 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24c%22 d=%22m547.891 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM821.941 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM913.291 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e237%22 d=%22m1004.641 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b2%22 d=%22m1278.691 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27a%22 d=%22m1370.041 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28a%22 d=%22m1461.391 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20b%22 d=%22m1644.091 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e263%22 d=%22m1735.441 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1826.791 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 1732.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e263%22 d=%22m2100.841 1732.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m45.466 1811.25 45.467 26.25v52.5l-45.467 26.25L0 1890v-52.5ZM136.816 1811.25l45.467 26.25v52.5l-45.467 26.25L91.35 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e211%22 d=%22m228.166 1811.25 45.467 26.25v52.5l-45.467 26.25L182.7 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 1811.25 45.467 26.25v52.5l-45.467 26.25L274.05 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e256%22 d=%22m410.866 1811.25 45.467 26.25v52.5l-45.467 26.25L365.4 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 1811.25 45.467 26.25v52.5l-45.467 26.25L456.75 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25c%22 d=%22m593.566 1811.25 45.467 26.25v52.5l-45.467 26.25L548.1 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e247%22 d=%22m684.916 1811.25 45.467 26.25v52.5l-45.467 26.25L639.45 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 1811.25 45.467 26.25v52.5l-45.467 26.25L730.8 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ba%22 d=%22m867.616 1811.25 45.467 26.25v52.5l-45.467 26.25L822.15 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e277%22 d=%22m958.966 1811.25 45.467 26.25v52.5l-45.467 26.25L913.5 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1050.316 1811.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 1811.25l45.467 26.25v52.5l-45.467 26.25L1096.2 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e222%22 d=%22m1233.016 1811.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 1811.25 45.467 26.25v52.5l-45.467 26.25L1278.9 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26b%22 d=%22m1415.716 1811.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1507.066 1811.25 45.467 26.25v52.5l-45.467 26.25L1461.6 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e290%22 d=%22m1598.416 1811.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 1811.25 45.467 26.25v52.5l-45.467 26.25L1644.3 1890v-52.5ZM1781.116 1811.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a1%22 d=%22m1872.466 1811.25 45.467 26.25v52.5l-45.467 26.25L1827 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 1811.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e269%22 d=%22m2055.166 1811.25 45.467 26.25v52.5l-45.467 26.25L2009.7 1890v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m91.141 1890 45.467 26.25v52.5L91.14 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e280%22 d=%22m182.491 1890 45.467 26.25v52.5L182.49 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m273.841 1890 45.467 26.25v52.5L273.84 1995l-45.466-26.25v-52.5ZM365.191 1890l45.467 26.25v52.5L365.19 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e256%22 d=%22m456.541 1890 45.467 26.25v52.5L456.54 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e227%22 d=%22m547.891 1890 45.467 26.25v52.5L547.89 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e213%22 d=%22m639.241 1890 45.467 26.25v52.5L639.24 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m730.591 1890 45.467 26.25v52.5L730.59 1995l-45.466-26.25v-52.5ZM821.941 1890l45.467 26.25v52.5L821.94 1995l-45.466-26.25v-52.5ZM913.291 1890l45.467 26.25v52.5L913.29 1995l-45.466-26.25v-52.5ZM1004.641 1890l45.467 26.25v52.5L1004.64 1995l-45.466-26.25v-52.5ZM1095.991 1890l45.467 26.25v52.5L1095.99 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2bb%22 d=%22m1187.341 1890 45.467 26.25v52.5L1187.34 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28d%22 d=%22m1278.691 1890 45.467 26.25v52.5L1278.69 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e203%22 d=%22m1370.041 1890 45.467 26.25v52.5L1370.04 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1461.391 1890 45.467 26.25v52.5L1461.39 1995l-45.466-26.25v-52.5ZM1552.741 1890l45.467 26.25v52.5L1552.74 1995l-45.466-26.25v-52.5ZM1644.091 1890l45.467 26.25v52.5L1644.09 1995l-45.466-26.25v-52.5ZM1735.441 1890l45.467 26.25v52.5L1735.44 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e206%22 d=%22m1826.791 1890 45.467 26.25v52.5L1826.79 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1918.141 1890 45.467 26.25v52.5L1918.14 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25f%22 d=%22m2009.491 1890 45.467 26.25v52.5L2009.49 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24e%22 d=%22m2100.841 1890 45.467 26.25v52.5L2100.84 1995l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M45.466 1968.75 90.933 1995v52.5l-45.467 26.25L0 2047.5V1995ZM136.816 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM228.166 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM319.516 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM410.866 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM502.216 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM593.566 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM684.916 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e242%22 d=%22m776.266 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m867.616 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM958.966 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e288%22 d=%22m1050.316 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1141.666 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM1233.016 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e239%22 d=%22m1324.366 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM1507.066 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e217%22 d=%22m1598.416 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM1781.116 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995ZM1872.466 1968.75l45.467 26.25v52.5l-45.467 26.25L1827 2047.5V1995ZM1963.816 1968.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26e%22 d=%22m2055.166 1968.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V1995Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m91.141 2047.5 45.467 26.25v52.5L91.14 2152.5l-45.466-26.25v-52.5ZM182.491 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM456.541 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM547.891 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM639.241 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM821.941 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM913.291 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a8%22 d=%22m1004.641 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22d%22 d=%22m1095.991 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e204%22 d=%22m1187.341 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e216%22 d=%22m1461.391 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27d%22 d=%22m1552.741 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1644.091 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 2047.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2af%22 d=%22m2009.491 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 2047.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 2126.25l45.467 26.25v52.5l-45.467 26.25L0 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23e%22 d=%22m136.816 2126.25 45.467 26.25v52.5l-45.467 26.25L91.35 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e251%22 d=%22m228.166 2126.25 45.467 26.25v52.5l-45.467 26.25L182.7 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 2126.25 45.467 26.25v52.5l-45.467 26.25L274.05 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ad%22 d=%22m410.866 2126.25 45.467 26.25v52.5l-45.467 26.25L365.4 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 2126.25 45.467 26.25v52.5l-45.467 26.25L456.75 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e273%22 d=%22m593.566 2126.25 45.467 26.25v52.5l-45.467 26.25L548.1 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m684.916 2126.25 45.467 26.25v52.5l-45.467 26.25L639.45 2205v-52.5ZM776.266 2126.25l45.467 26.25v52.5l-45.467 26.25L730.8 2205v-52.5ZM867.616 2126.25l45.467 26.25v52.5l-45.467 26.25L822.15 2205v-52.5ZM958.966 2126.25l45.467 26.25v52.5l-45.467 26.25L913.5 2205v-52.5ZM1050.316 2126.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 2126.25l45.467 26.25v52.5l-45.467 26.25L1096.2 2205v-52.5ZM1233.016 2126.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e284%22 d=%22m1324.366 2126.25 45.467 26.25v52.5l-45.467 26.25L1278.9 2205v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27e%22 d=%22m1415.716 2126.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1507.066 2126.25 45.467 26.25v52.5l-45.467 26.25L1461.6 2205v-52.5ZM1598.416 2126.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1689.766 2126.25l45.467 26.25v52.5l-45.467 26.25L1644.3 2205v-52.5ZM1781.116 2126.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1872.466 2126.25l45.467 26.25v52.5l-45.467 26.25L1827 2205v-52.5ZM1963.816 2126.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2055.166 2126.25l45.467 26.25v52.5l-45.467 26.25L2009.7 2205v-52.5ZM91.141 2205l45.467 26.25v52.5L91.14 2310l-45.466-26.25v-52.5ZM182.491 2205l45.467 26.25v52.5L182.49 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e247%22 d=%22m273.841 2205 45.467 26.25v52.5L273.84 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m365.191 2205 45.467 26.25v52.5L365.19 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e255%22 d=%22m456.541 2205 45.467 26.25v52.5L456.54 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 2205 45.467 26.25v52.5L547.89 2310l-45.466-26.25v-52.5ZM639.241 2205l45.467 26.25v52.5L639.24 2310l-45.466-26.25v-52.5ZM730.591 2205l45.467 26.25v52.5L730.59 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26c%22 d=%22m821.941 2205 45.467 26.25v52.5L821.94 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e289%22 d=%22m913.291 2205 45.467 26.25v52.5L913.29 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 2205 45.467 26.25v52.5L1004.64 2310l-45.466-26.25v-52.5ZM1095.991 2205l45.467 26.25v52.5L1095.99 2310l-45.466-26.25v-52.5ZM1187.341 2205l45.467 26.25v52.5L1187.34 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ae%22 d=%22m1278.691 2205 45.467 26.25v52.5L1278.69 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1370.041 2205 45.467 26.25v52.5L1370.04 2310l-45.466-26.25v-52.5ZM1461.391 2205l45.467 26.25v52.5L1461.39 2310l-45.466-26.25v-52.5ZM1552.741 2205l45.467 26.25v52.5L1552.74 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e205%22 d=%22m1644.091 2205 45.467 26.25v52.5L1644.09 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1735.441 2205 45.467 26.25v52.5L1735.44 2310l-45.466-26.25v-52.5ZM1826.791 2205l45.467 26.25v52.5L1826.79 2310l-45.466-26.25v-52.5ZM1918.141 2205l45.467 26.25v52.5L1918.14 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21c%22 d=%22m2009.491 2205 45.467 26.25v52.5L2009.49 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2aa%22 d=%22m2100.841 2205 45.467 26.25v52.5L2100.84 2310l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M45.466 2283.75 90.933 2310v52.5l-45.467 26.25L0 2362.5V2310ZM136.816 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM228.166 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM319.516 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM410.866 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM502.216 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM593.566 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21e%22 d=%22m684.916 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM867.616 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM958.966 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM1050.316 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e277%22 d=%22m1141.666 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1233.016 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23f%22 d=%22m1324.366 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM1507.066 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e252%22 d=%22m1598.416 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM1781.116 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29c%22 d=%22m1872.466 2283.75 45.467 26.25v52.5l-45.467 26.25L1827 2362.5V2310Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 2283.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM2055.166 2283.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2310ZM91.141 2362.5l45.467 26.25v52.5L91.14 2467.5l-45.466-26.25v-52.5ZM182.491 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM456.541 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM547.891 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM639.241 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e292%22 d=%22m821.941 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a2%22 d=%22m913.291 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1004.641 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e221%22 d=%22m1095.991 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27b%22 d=%22m1187.341 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1461.391 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1552.741 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1644.091 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28c%22 d=%22m1918.141 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2009.491 2362.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2100.841 2362.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 2441.25l45.467 26.25v52.5l-45.467 26.25L0 2520v-52.5ZM136.816 2441.25l45.467 26.25v52.5l-45.467 26.25L91.35 2520v-52.5ZM228.166 2441.25l45.467 26.25v52.5l-45.467 26.25L182.7 2520v-52.5ZM319.516 2441.25l45.467 26.25v52.5l-45.467 26.25L274.05 2520v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e288%22 d=%22m410.866 2441.25 45.467 26.25v52.5l-45.467 26.25L365.4 2520v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 2441.25 45.467 26.25v52.5l-45.467 26.25L456.75 2520v-52.5ZM593.566 2441.25l45.467 26.25v52.5l-45.467 26.25L548.1 2520v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ba%22 d=%22m684.916 2441.25 45.467 26.25v52.5l-45.467 26.25L639.45 2520v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 2441.25 45.467 26.25v52.5l-45.467 26.25L730.8 2520v-52.5ZM867.616 2441.25l45.467 26.25v52.5l-45.467 26.25L822.15 2520v-52.5ZM958.966 2441.25l45.467 26.25v52.5l-45.467 26.25L913.5 2520v-52.5ZM1050.316 2441.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 2441.25l45.467 26.25v52.5l-45.467 26.25L1096.2 2520v-52.5ZM1233.016 2441.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1324.366 2441.25l45.467 26.25v52.5l-45.467 26.25L1278.9 2520v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e250%22 d=%22m1415.716 2441.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24f%22 d=%22m1507.066 2441.25 45.467 26.25v52.5l-45.467 26.25L1461.6 2520v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24b%22 d=%22m1598.416 2441.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 2441.25 45.467 26.25v52.5l-45.467 26.25L1644.3 2520v-52.5ZM1781.116 2441.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1872.466 2441.25l45.467 26.25v52.5l-45.467 26.25L1827 2520v-52.5ZM1963.816 2441.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2055.166 2441.25l45.467 26.25v52.5l-45.467 26.25L2009.7 2520v-52.5ZM91.141 2520l45.467 26.25v52.5L91.14 2625l-45.466-26.25v-52.5ZM182.491 2520l45.467 26.25v52.5L182.49 2625l-45.466-26.25v-52.5ZM273.841 2520l45.467 26.25v52.5L273.84 2625l-45.466-26.25v-52.5ZM365.191 2520l45.467 26.25v52.5L365.19 2625l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e232%22 d=%22m456.541 2520 45.467 26.25v52.5L456.54 2625l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 2520 45.467 26.25v52.5L547.89 2625l-45.466-26.25v-52.5ZM639.241 2520l45.467 26.25v52.5L639.24 2625l-45.466-26.25v-52.5ZM730.591 2520l45.467 26.25v52.5L730.59 2625l-45.466-26.25v-52.5ZM821.941 2520l45.467 26.25v52.5L821.94 2625l-45.466-26.25v-52.5ZM913.291 2520l45.467 26.25v52.5L913.29 2625l-45.466-26.25v-52.5ZM1004.641 2520l45.467 26.25v52.5L1004.64 2625l-45.466-26.25v-52.5ZM1095.991 2520l45.467 26.25v52.5L1095.99 2625l-45.466-26.25v-52.5ZM1187.341 2520l45.467 26.25v52.5L1187.34 2625l-45.466-26.25v-52.5ZM1278.691 2520l45.467 26.25v52.5L1278.69 2625l-45.466-26.25v-52.5ZM1370.041 2520l45.467 26.25v52.5L1370.04 2625l-45.466-26.25v-52.5ZM1461.391 2520l45.467 26.25v52.5L1461.39 2625l-45.466-26.25v-52.5ZM1552.741 2520l45.467 26.25v52.5L1552.74 2625l-45.466-26.25v-52.5ZM1644.091 2520l45.467 26.25v52.5L1644.09 2625l-45.466-26.25v-52.5ZM1735.441 2520l45.467 26.25v52.5L1735.44 2625l-45.466-26.25v-52.5ZM1826.791 2520l45.467 26.25v52.5L1826.79 2625l-45.466-26.25v-52.5ZM1918.141 2520l45.467 26.25v52.5L1918.14 2625l-45.466-26.25v-52.5ZM2009.491 2520l45.467 26.25v52.5L2009.49 2625l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e277%22 d=%22m2100.841 2520 45.467 26.25v52.5L2100.84 2625l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M45.466 2598.75 90.933 2625v52.5l-45.467 26.25L0 2677.5V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e237%22 d=%22m136.816 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m228.166 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM319.516 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM410.866 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM502.216 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM593.566 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a0%22 d=%22m684.916 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e232%22 d=%22m867.616 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e218%22 d=%22m958.966 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1050.316 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e239%22 d=%22m1141.666 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1233.016 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM1324.366 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM1415.716 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM1507.066 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM1598.416 2598.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e254%22 d=%22m1689.766 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1781.116 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM1872.466 2598.75l45.467 26.25v52.5l-45.467 26.25L1827 2677.5V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b3%22 d=%22m1963.816 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 2598.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2625ZM91.141 2677.5l45.467 26.25v52.5L91.14 2782.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27f%22 d=%22m182.491 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m273.841 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2aa%22 d=%22m365.191 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m456.541 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM547.891 2677.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2bb%22 d=%22m639.241 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21a%22 d=%22m730.591 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m821.941 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM913.291 2677.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e286%22 d=%22m1004.641 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 2677.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 2677.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 2677.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e204%22 d=%22m1461.391 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e217%22 d=%22m1552.741 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e251%22 d=%22m1644.091 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1735.441 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b0%22 d=%22m1826.791 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1918.141 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 2677.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26d%22 d=%22m2100.841 2677.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b7%22 d=%22m45.466 2756.25 45.467 26.25v52.5l-45.467 26.25L0 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m136.816 2756.25 45.467 26.25v52.5l-45.467 26.25L91.35 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e229%22 d=%22m228.166 2756.25 45.467 26.25v52.5l-45.467 26.25L182.7 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 2756.25 45.467 26.25v52.5l-45.467 26.25L274.05 2835v-52.5ZM410.866 2756.25l45.467 26.25v52.5l-45.467 26.25L365.4 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a4%22 d=%22m502.216 2756.25 45.467 26.25v52.5l-45.467 26.25L456.75 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e227%22 d=%22m593.566 2756.25 45.467 26.25v52.5l-45.467 26.25L548.1 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m684.916 2756.25 45.467 26.25v52.5l-45.467 26.25L639.45 2835v-52.5ZM776.266 2756.25l45.467 26.25v52.5l-45.467 26.25L730.8 2835v-52.5ZM867.616 2756.25l45.467 26.25v52.5l-45.467 26.25L822.15 2835v-52.5ZM958.966 2756.25l45.467 26.25v52.5l-45.467 26.25L913.5 2835v-52.5ZM1050.316 2756.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e255%22 d=%22m1141.666 2756.25 45.467 26.25v52.5l-45.467 26.25L1096.2 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1233.016 2756.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28d%22 d=%22m1324.366 2756.25 45.467 26.25v52.5l-45.467 26.25L1278.9 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 2756.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27c%22 d=%22m1507.066 2756.25 45.467 26.25v52.5l-45.467 26.25L1461.6 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1598.416 2756.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1689.766 2756.25l45.467 26.25v52.5l-45.467 26.25L1644.3 2835v-52.5ZM1781.116 2756.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1872.466 2756.25l45.467 26.25v52.5l-45.467 26.25L1827 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27e%22 d=%22m1963.816 2756.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 2756.25 45.467 26.25v52.5l-45.467 26.25L2009.7 2835v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e258%22 d=%22m91.141 2835 45.467 26.25v52.5L91.14 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 2835 45.467 26.25v52.5L182.49 2940l-45.466-26.25v-52.5ZM273.841 2835l45.467 26.25v52.5L273.84 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e231%22 d=%22m365.191 2835 45.467 26.25v52.5L365.19 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m456.541 2835 45.467 26.25v52.5L456.54 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a0%22 d=%22m547.891 2835 45.467 26.25v52.5L547.89 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b0%22 d=%22m639.241 2835 45.467 26.25v52.5L639.24 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20a%22 d=%22m730.591 2835 45.467 26.25v52.5L730.59 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m821.941 2835 45.467 26.25v52.5L821.94 2940l-45.466-26.25v-52.5ZM913.291 2835l45.467 26.25v52.5L913.29 2940l-45.466-26.25v-52.5ZM1004.641 2835l45.467 26.25v52.5L1004.64 2940l-45.466-26.25v-52.5ZM1095.991 2835l45.467 26.25v52.5L1095.99 2940l-45.466-26.25v-52.5ZM1187.341 2835l45.467 26.25v52.5L1187.34 2940l-45.466-26.25v-52.5ZM1278.691 2835l45.467 26.25v52.5L1278.69 2940l-45.466-26.25v-52.5ZM1370.041 2835l45.467 26.25v52.5L1370.04 2940l-45.466-26.25v-52.5ZM1461.391 2835l45.467 26.25v52.5L1461.39 2940l-45.466-26.25v-52.5ZM1552.741 2835l45.467 26.25v52.5L1552.74 2940l-45.466-26.25v-52.5ZM1644.091 2835l45.467 26.25v52.5L1644.09 2940l-45.466-26.25v-52.5ZM1735.441 2835l45.467 26.25v52.5L1735.44 2940l-45.466-26.25v-52.5ZM1826.791 2835l45.467 26.25v52.5L1826.79 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e276%22 d=%22m1918.141 2835 45.467 26.25v52.5L1918.14 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25f%22 d=%22m2009.491 2835 45.467 26.25v52.5L2009.49 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e286%22 d=%22m2100.841 2835 45.467 26.25v52.5L2100.84 2940l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22M45.466 2913.75 90.933 2940v52.5l-45.467 26.25L0 2992.5V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e226%22 d=%22m136.816 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m228.166 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM319.516 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM410.866 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM502.216 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM593.566 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25f%22 d=%22m684.916 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM867.616 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM958.966 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2bd%22 d=%22m1050.316 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m1141.666 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1233.016 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM1324.366 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM1415.716 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ac%22 d=%22m1507.066 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1598.416 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e265%22 d=%22m1689.766 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1781.116 2913.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM1872.466 2913.75l45.467 26.25v52.5l-45.467 26.25L1827 2992.5V2940ZM1963.816 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940ZM2055.166 2913.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V2940Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a8%22 d=%22m91.141 2992.5 45.467 26.25v52.5L91.14 3097.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25f%22 d=%22m456.541 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28d%22 d=%22m639.241 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28e%22 d=%22m730.591 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m821.941 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m913.291 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1004.641 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e224%22 d=%22m1095.991 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1187.341 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28b%22 d=%22m1461.391 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1552.741 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e223%22 d=%22m1644.091 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e245%22 d=%22m1735.441 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1826.791 2992.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2100.841 2992.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 3071.25l45.467 26.25v52.5l-45.467 26.25L0 3150v-52.5ZM136.816 3071.25l45.467 26.25v52.5l-45.467 26.25L91.35 3150v-52.5ZM228.166 3071.25l45.467 26.25v52.5l-45.467 26.25L182.7 3150v-52.5ZM319.516 3071.25l45.467 26.25v52.5l-45.467 26.25L274.05 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29d%22 d=%22m410.866 3071.25 45.467 26.25v52.5l-45.467 26.25L365.4 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 3071.25 45.467 26.25v52.5l-45.467 26.25L456.75 3150v-52.5ZM593.566 3071.25l45.467 26.25v52.5l-45.467 26.25L548.1 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29d%22 d=%22m684.916 3071.25 45.467 26.25v52.5l-45.467 26.25L639.45 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 3071.25 45.467 26.25v52.5l-45.467 26.25L730.8 3150v-52.5ZM867.616 3071.25l45.467 26.25v52.5l-45.467 26.25L822.15 3150v-52.5ZM958.966 3071.25l45.467 26.25v52.5l-45.467 26.25L913.5 3150v-52.5ZM1050.316 3071.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 3071.25l45.467 26.25v52.5l-45.467 26.25L1096.2 3150v-52.5ZM1233.016 3071.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1324.366 3071.25l45.467 26.25v52.5l-45.467 26.25L1278.9 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28f%22 d=%22m1415.716 3071.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22d%22 d=%22m1507.066 3071.25 45.467 26.25v52.5l-45.467 26.25L1461.6 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1598.416 3071.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ac%22 d=%22m1689.766 3071.25 45.467 26.25v52.5l-45.467 26.25L1644.3 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1781.116 3071.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e229%22 d=%22m1872.466 3071.25 45.467 26.25v52.5l-45.467 26.25L1827 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 3071.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21a%22 d=%22m2055.166 3071.25 45.467 26.25v52.5l-45.467 26.25L2009.7 3150v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m91.141 3150 45.467 26.25v52.5L91.14 3255l-45.466-26.25v-52.5ZM182.491 3150l45.467 26.25v52.5L182.49 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m273.841 3150 45.467 26.25v52.5L273.84 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e250%22 d=%22m365.191 3150 45.467 26.25v52.5L365.19 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m456.541 3150 45.467 26.25v52.5L456.54 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e291%22 d=%22m547.891 3150 45.467 26.25v52.5L547.89 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 3150 45.467 26.25v52.5L639.24 3255l-45.466-26.25v-52.5ZM730.591 3150l45.467 26.25v52.5L730.59 3255l-45.466-26.25v-52.5ZM821.941 3150l45.467 26.25v52.5L821.94 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e271%22 d=%22m913.291 3150 45.467 26.25v52.5L913.29 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27f%22 d=%22m1004.641 3150 45.467 26.25v52.5L1004.64 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 3150 45.467 26.25v52.5L1095.99 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23e%22 d=%22m1187.341 3150 45.467 26.25v52.5L1187.34 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 3150 45.467 26.25v52.5L1278.69 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24f%22 d=%22m1370.041 3150 45.467 26.25v52.5L1370.04 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1461.391 3150 45.467 26.25v52.5L1461.39 3255l-45.466-26.25v-52.5ZM1552.741 3150l45.467 26.25v52.5L1552.74 3255l-45.466-26.25v-52.5ZM1644.091 3150l45.467 26.25v52.5L1644.09 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28e%22 d=%22m1735.441 3150 45.467 26.25v52.5L1735.44 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29c%22 d=%22m1826.791 3150 45.467 26.25v52.5L1826.79 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e240%22 d=%22m1918.141 3150 45.467 26.25v52.5L1918.14 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2009.491 3150 45.467 26.25v52.5L2009.49 3255l-45.466-26.25v-52.5ZM2100.841 3150l45.467 26.25v52.5L2100.84 3255l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e231%22 d=%22M45.466 3228.75 90.933 3255v52.5l-45.467 26.25L0 3307.5V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m136.816 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM228.166 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM319.516 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM410.866 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e257%22 d=%22m502.216 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e287%22 d=%22m593.566 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m684.916 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM776.266 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b0%22 d=%22m867.616 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e264%22 d=%22m958.966 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e242%22 d=%22m1050.316 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a1%22 d=%22m1141.666 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1233.016 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22b%22 d=%22m1324.366 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM1507.066 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM1598.416 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM1689.766 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255ZM1781.116 3228.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22b%22 d=%22m1872.466 3228.75 45.467 26.25v52.5l-45.467 26.25L1827 3307.5V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a0%22 d=%22m1963.816 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 3228.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3255Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a7%22 d=%22m91.141 3307.5 45.467 26.25v52.5L91.14 3412.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM456.541 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26f%22 d=%22m547.891 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM821.941 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e202%22 d=%22m913.291 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26c%22 d=%22m1004.641 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m1278.691 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1370.041 3307.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1461.391 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1552.741 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1644.091 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2100.841 3307.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 3386.25l45.467 26.25v52.5l-45.467 26.25L0 3465v-52.5ZM136.816 3386.25l45.467 26.25v52.5l-45.467 26.25L91.35 3465v-52.5ZM228.166 3386.25l45.467 26.25v52.5l-45.467 26.25L182.7 3465v-52.5ZM319.516 3386.25l45.467 26.25v52.5l-45.467 26.25L274.05 3465v-52.5ZM410.866 3386.25l45.467 26.25v52.5l-45.467 26.25L365.4 3465v-52.5ZM502.216 3386.25l45.467 26.25v52.5l-45.467 26.25L456.75 3465v-52.5ZM593.566 3386.25l45.467 26.25v52.5l-45.467 26.25L548.1 3465v-52.5ZM684.916 3386.25l45.467 26.25v52.5l-45.467 26.25L639.45 3465v-52.5ZM776.266 3386.25l45.467 26.25v52.5l-45.467 26.25L730.8 3465v-52.5ZM867.616 3386.25l45.467 26.25v52.5l-45.467 26.25L822.15 3465v-52.5ZM958.966 3386.25l45.467 26.25v52.5l-45.467 26.25L913.5 3465v-52.5ZM1050.316 3386.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 3386.25l45.467 26.25v52.5l-45.467 26.25L1096.2 3465v-52.5ZM1233.016 3386.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1324.366 3386.25l45.467 26.25v52.5l-45.467 26.25L1278.9 3465v-52.5ZM1415.716 3386.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1507.066 3386.25l45.467 26.25v52.5l-45.467 26.25L1461.6 3465v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e276%22 d=%22m1598.416 3386.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 3386.25 45.467 26.25v52.5l-45.467 26.25L1644.3 3465v-52.5ZM1781.116 3386.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1872.466 3386.25l45.467 26.25v52.5l-45.467 26.25L1827 3465v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e270%22 d=%22m1963.816 3386.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2055.166 3386.25 45.467 26.25v52.5l-45.467 26.25L2009.7 3465v-52.5ZM91.141 3465l45.467 26.25v52.5L91.14 3570l-45.466-26.25v-52.5ZM182.491 3465l45.467 26.25v52.5L182.49 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e260%22 d=%22m273.841 3465 45.467 26.25v52.5L273.84 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e266%22 d=%22m365.191 3465 45.467 26.25v52.5L365.19 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m456.541 3465 45.467 26.25v52.5L456.54 3570l-45.466-26.25v-52.5ZM547.891 3465l45.467 26.25v52.5L547.89 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e278%22 d=%22m639.241 3465 45.467 26.25v52.5L639.24 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m730.591 3465 45.467 26.25v52.5L730.59 3570l-45.466-26.25v-52.5ZM821.941 3465l45.467 26.25v52.5L821.94 3570l-45.466-26.25v-52.5ZM913.291 3465l45.467 26.25v52.5L913.29 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a7%22 d=%22m1004.641 3465 45.467 26.25v52.5L1004.64 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27f%22 d=%22m1095.991 3465 45.467 26.25v52.5L1095.99 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1187.341 3465 45.467 26.25v52.5L1187.34 3570l-45.466-26.25v-52.5ZM1278.691 3465l45.467 26.25v52.5L1278.69 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21d%22 d=%22m1370.041 3465 45.467 26.25v52.5L1370.04 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23c%22 d=%22m1461.391 3465 45.467 26.25v52.5L1461.39 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e225%22 d=%22m1552.741 3465 45.467 26.25v52.5L1552.74 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1644.091 3465 45.467 26.25v52.5L1644.09 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e297%22 d=%22m1735.441 3465 45.467 26.25v52.5L1735.44 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20c%22 d=%22m1826.791 3465 45.467 26.25v52.5L1826.79 3570l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1918.141 3465 45.467 26.25v52.5L1918.14 3570l-45.466-26.25v-52.5ZM2009.491 3465l45.467 26.25v52.5L2009.49 3570l-45.466-26.25v-52.5ZM2100.841 3465l45.467 26.25v52.5L2100.84 3570l-45.466-26.25v-52.5ZM45.466 3543.75 90.933 3570v52.5l-45.467 26.25L0 3622.5V3570ZM136.816 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM228.166 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM319.516 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21d%22 d=%22m410.866 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e235%22 d=%22m593.566 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m684.916 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a3%22 d=%22m776.266 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m867.616 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e231%22 d=%22m958.966 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1050.316 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1141.666 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1233.016 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25c%22 d=%22m1324.366 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 3543.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1507.066 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1598.416 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1689.766 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1781.116 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM1872.466 3543.75l45.467 26.25v52.5l-45.467 26.25L1827 3622.5V3570ZM1963.816 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM2055.166 3543.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3570ZM91.141 3622.5l45.467 26.25v52.5L91.14 3727.5l-45.466-26.25v-52.5ZM182.491 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e200%22 d=%22m273.841 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m365.191 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM456.541 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM547.891 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM639.241 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e233%22 d=%22m821.941 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m913.291 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1004.641 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1095.991 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1461.391 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1552.741 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1644.091 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 3622.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29d%22 d=%22m1918.141 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2009.491 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23c%22 d=%22m2100.841 3622.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e296%22 d=%22m45.466 3701.25 45.467 26.25v52.5l-45.467 26.25L0 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22f%22 d=%22m136.816 3701.25 45.467 26.25v52.5l-45.467 26.25L91.35 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m228.166 3701.25 45.467 26.25v52.5l-45.467 26.25L182.7 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e284%22 d=%22m319.516 3701.25 45.467 26.25v52.5l-45.467 26.25L274.05 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m410.866 3701.25 45.467 26.25v52.5l-45.467 26.25L365.4 3780v-52.5ZM502.216 3701.25l45.467 26.25v52.5l-45.467 26.25L456.75 3780v-52.5ZM593.566 3701.25l45.467 26.25v52.5l-45.467 26.25L548.1 3780v-52.5ZM684.916 3701.25l45.467 26.25v52.5l-45.467 26.25L639.45 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e209%22 d=%22m776.266 3701.25 45.467 26.25v52.5l-45.467 26.25L730.8 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m867.616 3701.25 45.467 26.25v52.5l-45.467 26.25L822.15 3780v-52.5ZM958.966 3701.25l45.467 26.25v52.5l-45.467 26.25L913.5 3780v-52.5ZM1050.316 3701.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 3701.25l45.467 26.25v52.5l-45.467 26.25L1096.2 3780v-52.5ZM1233.016 3701.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1324.366 3701.25l45.467 26.25v52.5l-45.467 26.25L1278.9 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20e%22 d=%22m1415.716 3701.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1507.066 3701.25 45.467 26.25v52.5l-45.467 26.25L1461.6 3780v-52.5ZM1598.416 3701.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1689.766 3701.25l45.467 26.25v52.5l-45.467 26.25L1644.3 3780v-52.5ZM1781.116 3701.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21e%22 d=%22m1872.466 3701.25 45.467 26.25v52.5l-45.467 26.25L1827 3780v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 3701.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2055.166 3701.25l45.467 26.25v52.5l-45.467 26.25L2009.7 3780v-52.5ZM91.141 3780l45.467 26.25v52.5L91.14 3885l-45.466-26.25v-52.5ZM182.491 3780l45.467 26.25v52.5L182.49 3885l-45.466-26.25v-52.5ZM273.841 3780l45.467 26.25v52.5L273.84 3885l-45.466-26.25v-52.5ZM365.191 3780l45.467 26.25v52.5L365.19 3885l-45.466-26.25v-52.5ZM456.541 3780l45.467 26.25v52.5L456.54 3885l-45.466-26.25v-52.5ZM547.891 3780l45.467 26.25v52.5L547.89 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e293%22 d=%22m639.241 3780 45.467 26.25v52.5L639.24 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m730.591 3780 45.467 26.25v52.5L730.59 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e242%22 d=%22m821.941 3780 45.467 26.25v52.5L821.94 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e248%22 d=%22m913.291 3780 45.467 26.25v52.5L913.29 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b3%22 d=%22m1004.641 3780 45.467 26.25v52.5L1004.64 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 3780 45.467 26.25v52.5L1095.99 3885l-45.466-26.25v-52.5ZM1187.341 3780l45.467 26.25v52.5L1187.34 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e204%22 d=%22m1278.691 3780 45.467 26.25v52.5L1278.69 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1370.041 3780 45.467 26.25v52.5L1370.04 3885l-45.466-26.25v-52.5ZM1461.391 3780l45.467 26.25v52.5L1461.39 3885l-45.466-26.25v-52.5ZM1552.741 3780l45.467 26.25v52.5L1552.74 3885l-45.466-26.25v-52.5ZM1644.091 3780l45.467 26.25v52.5L1644.09 3885l-45.466-26.25v-52.5ZM1735.441 3780l45.467 26.25v52.5L1735.44 3885l-45.466-26.25v-52.5ZM1826.791 3780l45.467 26.25v52.5L1826.79 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e213%22 d=%22m1918.141 3780 45.467 26.25v52.5L1918.14 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e248%22 d=%22m2009.491 3780 45.467 26.25v52.5L2009.49 3885l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 3780 45.467 26.25v52.5L2100.84 3885l-45.466-26.25v-52.5ZM45.466 3858.75 90.933 3885v52.5l-45.467 26.25L0 3937.5V3885ZM136.816 3858.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885ZM228.166 3858.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885ZM319.516 3858.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e287%22 d=%22m410.866 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b8%22 d=%22m502.216 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m593.566 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2be%22 d=%22m684.916 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26a%22 d=%22m776.266 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m867.616 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e288%22 d=%22m958.966 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e267%22 d=%22m1050.316 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1141.666 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e266%22 d=%22m1233.016 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885ZM1415.716 3858.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885ZM1507.066 3858.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e268%22 d=%22m1598.416 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ba%22 d=%22m1781.116 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e284%22 d=%22m1872.466 3858.75 45.467 26.25v52.5l-45.467 26.25L1827 3937.5V3885Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 3858.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885ZM2055.166 3858.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V3885ZM91.141 3937.5l45.467 26.25v52.5L91.14 4042.5l-45.466-26.25v-52.5ZM182.491 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e258%22 d=%22m456.541 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM639.241 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM730.591 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM821.941 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM913.291 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1004.641 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1095.991 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e210%22 d=%22m1187.341 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b1%22 d=%22m1278.691 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1370.041 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ac%22 d=%22m1461.391 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e261%22 d=%22m1552.741 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1644.091 3937.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2009.491 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2100.841 3937.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e248%22 d=%22m45.466 4016.25 45.467 26.25v52.5l-45.467 26.25L0 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e210%22 d=%22m136.816 4016.25 45.467 26.25v52.5l-45.467 26.25L91.35 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m228.166 4016.25 45.467 26.25v52.5l-45.467 26.25L182.7 4095v-52.5ZM319.516 4016.25l45.467 26.25v52.5l-45.467 26.25L274.05 4095v-52.5ZM410.866 4016.25l45.467 26.25v52.5l-45.467 26.25L365.4 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e296%22 d=%22m502.216 4016.25 45.467 26.25v52.5l-45.467 26.25L456.75 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m593.566 4016.25 45.467 26.25v52.5l-45.467 26.25L548.1 4095v-52.5ZM684.916 4016.25l45.467 26.25v52.5l-45.467 26.25L639.45 4095v-52.5ZM776.266 4016.25l45.467 26.25v52.5l-45.467 26.25L730.8 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e26f%22 d=%22m867.616 4016.25 45.467 26.25v52.5l-45.467 26.25L822.15 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m958.966 4016.25 45.467 26.25v52.5l-45.467 26.25L913.5 4095v-52.5ZM1050.316 4016.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 4016.25l45.467 26.25v52.5l-45.467 26.25L1096.2 4095v-52.5ZM1233.016 4016.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e25b%22 d=%22m1324.366 4016.25 45.467 26.25v52.5l-45.467 26.25L1278.9 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1415.716 4016.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e249%22 d=%22m1507.066 4016.25 45.467 26.25v52.5l-45.467 26.25L1461.6 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e23c%22 d=%22m1598.416 4016.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 4016.25 45.467 26.25v52.5l-45.467 26.25L1644.3 4095v-52.5ZM1781.116 4016.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1872.466 4016.25l45.467 26.25v52.5l-45.467 26.25L1827 4095v-52.5ZM1963.816 4016.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2055.166 4016.25l45.467 26.25v52.5l-45.467 26.25L2009.7 4095v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e208%22 d=%22m91.141 4095 45.467 26.25v52.5L91.14 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 4095 45.467 26.25v52.5L182.49 4200l-45.466-26.25v-52.5ZM273.841 4095l45.467 26.25v52.5L273.84 4200l-45.466-26.25v-52.5ZM365.191 4095l45.467 26.25v52.5L365.19 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e29e%22 d=%22m456.541 4095 45.467 26.25v52.5L456.54 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m547.891 4095 45.467 26.25v52.5L547.89 4200l-45.466-26.25v-52.5ZM639.241 4095l45.467 26.25v52.5L639.24 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e24b%22 d=%22m730.591 4095 45.467 26.25v52.5L730.59 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m821.941 4095 45.467 26.25v52.5L821.94 4200l-45.466-26.25v-52.5ZM913.291 4095l45.467 26.25v52.5L913.29 4200l-45.466-26.25v-52.5ZM1004.641 4095l45.467 26.25v52.5L1004.64 4200l-45.466-26.25v-52.5ZM1095.991 4095l45.467 26.25v52.5L1095.99 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e222%22 d=%22m1187.341 4095 45.467 26.25v52.5L1187.34 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1278.691 4095 45.467 26.25v52.5L1278.69 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21e%22 d=%22m1370.041 4095 45.467 26.25v52.5L1370.04 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1461.391 4095 45.467 26.25v52.5L1461.39 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e269%22 d=%22m1552.741 4095 45.467 26.25v52.5L1552.74 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e281%22 d=%22m1644.091 4095 45.467 26.25v52.5L1644.09 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1735.441 4095 45.467 26.25v52.5L1735.44 4200l-45.466-26.25v-52.5ZM1826.791 4095l45.467 26.25v52.5L1826.79 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e251%22 d=%22m1918.141 4095 45.467 26.25v52.5L1918.14 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e28e%22 d=%22m2009.491 4095 45.467 26.25v52.5L2009.49 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 4095 45.467 26.25v52.5L2100.84 4200l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e250%22 d=%22M45.466 4173.75 90.933 4200v52.5l-45.467 26.25L0 4252.5V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m136.816 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM228.166 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e291%22 d=%22m319.516 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m410.866 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM502.216 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM593.566 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22f%22 d=%22m684.916 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m776.266 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM867.616 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22f%22 d=%22m958.966 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1050.316 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20d%22 d=%22m1141.666 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1233.016 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM1324.366 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM1415.716 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM1507.066 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e244%22 d=%22m1598.416 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1689.766 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e20a%22 d=%22m1781.116 4173.75 45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1872.466 4173.75 45.467 26.25v52.5l-45.467 26.25L1827 4252.5V4200ZM1963.816 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200ZM2055.166 4173.75l45.467 26.25v52.5l-45.467 26.25-45.466-26.25V4200Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2a6%22 d=%22m91.141 4252.5 45.467 26.25v52.5L91.14 4357.5l-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m182.491 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM273.841 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM365.191 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM456.541 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e208%22 d=%22m547.891 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m639.241 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e278%22 d=%22m730.591 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e286%22 d=%22m821.941 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b8%22 d=%22m913.291 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22a%22 d=%22m1004.641 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1095.991 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1187.341 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1278.691 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1370.041 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1461.391 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1552.741 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1644.091 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1735.441 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1826.791 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1918.141 4252.5l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e27d%22 d=%22m2009.491 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m2100.841 4252.5 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM45.466 4331.25l45.467 26.25v52.5l-45.467 26.25L0 4410v-52.5ZM136.816 4331.25l45.467 26.25v52.5l-45.467 26.25L91.35 4410v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e22f%22 d=%22m228.166 4331.25 45.467 26.25v52.5l-45.467 26.25L182.7 4410v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m319.516 4331.25 45.467 26.25v52.5l-45.467 26.25L274.05 4410v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e21e%22 d=%22m410.866 4331.25 45.467 26.25v52.5l-45.467 26.25L365.4 4410v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m502.216 4331.25 45.467 26.25v52.5l-45.467 26.25L456.75 4410v-52.5ZM593.566 4331.25l45.467 26.25v52.5l-45.467 26.25L548.1 4410v-52.5ZM684.916 4331.25l45.467 26.25v52.5l-45.467 26.25L639.45 4410v-52.5ZM776.266 4331.25l45.467 26.25v52.5l-45.467 26.25L730.8 4410v-52.5ZM867.616 4331.25l45.467 26.25v52.5l-45.467 26.25L822.15 4410v-52.5ZM958.966 4331.25l45.467 26.25v52.5l-45.467 26.25L913.5 4410v-52.5ZM1050.316 4331.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1141.666 4331.25l45.467 26.25v52.5l-45.467 26.25L1096.2 4410v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2ad%22 d=%22m1233.016 4331.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1324.366 4331.25 45.467 26.25v52.5l-45.467 26.25L1278.9 4410v-52.5ZM1415.716 4331.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1507.066 4331.25l45.467 26.25v52.5l-45.467 26.25L1461.6 4410v-52.5ZM1598.416 4331.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM1689.766 4331.25l45.467 26.25v52.5l-45.467 26.25L1644.3 4410v-52.5ZM1781.116 4331.25l45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22%23bd97e2b2%22 d=%22m1872.466 4331.25 45.467 26.25v52.5l-45.467 26.25L1827 4410v-52.5Z%22%2F%3E%3Cpath stroke=%22%23bd97e2bf%22 stroke-width=%221.1550000000000002%22 fill=%22none%22 d=%22m1963.816 4331.25 45.467 26.25v52.5l-45.467 26.25-45.466-26.25v-52.5ZM2055.166 4331.25l45.467 26.25v52.5l-45.467 26.25L2009.7 4410v-52.5Z%22%2F%3E%3C%2Fg%3E%3Cpath fill=%22%23f3f3f3%22 filter=%22url(%23c)%22 opacity=%22.8%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22%2F%3E%3C%2FradialGradient%3E%3Cfilter id=%22c%22 x=%22-800%22 y=%22-560%22 width=%222800%22 height=%221960%22 filterUnits=%22userSpaceOnUse%22 primitiveUnits=%22userSpaceOnUse%22 color-interpolation-filters=%22linearRGB%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.12%22 numOctaves=%224%22 seed=%2215%22 stitchTiles=%22no-stitch%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22 result=%22turbulence%22%2F%3E%3CfeSpecularLighting surfaceScale=%2210%22 specularConstant=%22.25%22 specularExponent=%2220%22 lighting-color=%22%23fff%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22 in=%22turbulence%22 result=%22specularLighting%22%3E%3CfeDistantLight azimuth=%223%22 elevation=%22100%22%2F%3E%3C%2FfeSpecularLighting%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    ::selection{
+      color: #fff;
+      background: #bd97e2;
+    }
+    .skill-bars{
+      padding: 25px 30px;
+      width: 600px;
+      background: #fff;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+    .skill-bars .bar{
+      margin: 20px 0;
+    }
+    .skill-bars .bar:first-child{
+      margin-top: 0px;
+    }
+    .skill-bars .bar .info{
+      margin-bottom: 5px;
+    }
+    .skill-bars .bar .info span{
+      font-weight: 500;
+      font-size: 17px;
+      opacity: 0;
+      animation: showText 0.5s 1s linear forwards;
+    }
+    @keyframes showText {
+      100%{
+        opacity: 1;
+      }
+    }
+    .skill-bars .bar .progress-line{
+      height: 10px;
+      width: 100%;
+      background: #f0f0f0;
+      position: relative;
+      transform: scaleX(0);
+      transform-origin: left;
+      border-radius: 10px;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.05), 0 1px rgba(255,255,255,0.8);
+      animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    }
+    @keyframes animate {
+      100%{
+        transform: scaleX(1);
+      }
+    }
+    .bar .progress-line span{
+      height: 100%;
+      position: absolute;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: #bd97e2;
+      animation: animate 5s 1s infinite;
+    }
+    .bar .progress-line.automations span{
+      width: 90%;
+    }
+    .bar .progress-line.problem-solving span{
+      width: 78%;
+    }
+    .bar .progress-line.web span{
+      width: 75%;
+    }
+    .bar .progress-line.dbms span{
+      width: 80%;
+    }
+    .bar .progress-line.html span{
+      width: 85%;
+    }
+    .bar .progress-line.css span{
+      width: 70%;
+    }
+    .bar .progress-line.javas span{
+      width: 40%;
+    }
+    .bar .progress-line.python span{
+      width: 95%;
+    }
+    .bar .progress-line.sql span{
+      width: 90%;
+    }
+    .bar .progress-line.djo span{
+      width: 70%;
+    }
+    .bar .progress-line.csha span{
+      width: 75%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-icons-a{
+  height: 1.5em;
+  width: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.9em;
+  position: relative;
+  z-index: 2;
+  transition: 2s;
+}
+#first-text{
+  margin-top: 5.35em;
+  padding-right: 2.8em;
+}
+#second-text{
+  padding-right: 2.3em;
+}
+#third-text{
+  padding-right: 4.8em;
+}
+#first-icon{
+  margin-top: 5em;
+}
+
+#menu{
+  width: 3em;
+  height: 3em;
+  margin-top: 2em;
+  margin-right: 3em;
+  cursor: pointer;
+  z-index: 200;
+  position: fixed;
+}
+
+.bar-a{
+  height: 0.6em;
+  width: 100%;
+  background-color: #BD97E2;
+  display: block;
+  border-radius: 0.3em;
+  transition: 0.3s ease;
+  box-shadow: 0 0 6em 0 #fff,
+  inset 0 0 0.5em 0 #BD97E2;
+}
+#bar1{
+  transform: translateY(-0.2em);
+}
+#bar3{
+  transform: translateY(0.2em);
+}
+
+.nav li a{
+  color: #BD97E2;
+  text-decoration: none;
+}
+
+.nav li{
+  list-style: none;
+}
+
+.icon .bar{
+  background-color: #BD97E2;
+}
+.icon #bar1{
+  transform: translateY(1.3em) rotate(-45deg);
+}
+.icon #bar3{
+  transform: translateY(0.09em) rotate(45deg);
+}
+.icon #bar2{
+  opacity: 0;
+}
+
+.nav{
+  padding: 0;
+  margin-top: 6em;
+  margin-right: 0.2em;
+  transition: 1s ease;
+  display: none;
+  position: relative;
+  overflow-x: visible;
+  transition: 2s;
+}
+.change{
+  background-color: #000;
+  margin: 0;
+  width: 2.5em;
+  position: fixed;
+  font-size: 2em;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+  padding-left: 1em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  border: solid 0.1em #BD97E2;
+  border-radius: 30em;
+  box-shadow: 0 0 0.5em 0 #BD97E2;
+}
+
+.icon-description{
+  position: absolute;
+  color: #BD97E2;
+  background-color: #fff;
+  white-space: nowrap;
+  margin-left: -6em;
+  margin-top: 0.5em;
+  padding-left: 0.6em;
+  padding-top: 0.2em;
+  padding-bottom: 0.25em;
+  border: solid 0.1em #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 0.5em 0 #BD97E2;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.list-items-a:hover .icon-description{
+  opacity: 1;
+}
+.list-items-b:hover .icon-description{
+  opacity: 1;
+}
+.list-items-c:hover .icon-description{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.half-black-blog {
+  background-color: black;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  width: 100vw;
+  height: 150vh;
+  overflow: hidden;
+}
+
+.par-container {
+  position: relative;
+  display: flex;
+}
+
+.sexy-me {
+  position: absolute;
+  height: 60vh;
+  width: auto;
+  padding-top: 2vh;
+  object-fit: contain;
+  margin-top: -30vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-for-blogs{
+  display: flex;
+  flex-direction: row;
+}
+.nav-top{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: flex-end;
+  right: 0;
+}
+.nav-top img{
+  height: 4em;
+  width: 4em;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 5em;
+}
+.blogger-heading{
+  color: #fff;
+  font-size: 5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  padding-left: 3vw;
+  text-decoration: underline;
+  text-decoration-color: #BD97E2;
+}
+
+.blog-container-blogs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+.card {
+  background-color: #161240;
+  flex-shrink: 0;
+  height: 500px;
+  width: 350px;
+  margin: 0.25em 0.25em 0.5em 0.25em;
+  padding: 0.25em;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  border: solid 5px #BD97E2;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in;
+}
+.image-container-1{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 0.6s ease;
+}
+.insight-image{
+  object-fit: contain;
+  width: 360px;
+  height: auto;
+  z-index: 1;
+
+}
+.explain{
+  padding: 10px 5px 5px 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+.blog-img-header{
+  color: #BD97E2;
+  z-index: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.read-button{
+  color: #fff;
+  background-color: #161240;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.card:hover{
+  background-color: #BD97E2;
+}
+.card:hover .image-container-1{
+  height: 1100px;
+}
+.card:hover .explain{
+  color: #161240;
+}
+.card:hover .blog-img-header{
+  color: #fff;
+}
+
+
+.image-container-2{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 0.6s ease;
+}
+.astoria-image{
+  object-fit: contain;
+  width: 360px;
+  height: auto;
+  z-index: 1;
+}
+.card:hover .image-container-2{
+  height: 1150px;
+}
+
+
+.image-container-3{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 0.6s ease;
+}
+.cassandra-image{
+  object-fit: contain;
+  width: 360px;
+  height: auto;
+  z-index: 1;
+}
+.card:hover .image-container-3{
+  height: 1300px;
+}
+
+
+.image-container-4{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 0.6s ease;
+}
+.equipo-image{
+  object-fit: contain;
+  width: 360px;
+  height: auto;
+  z-index: 1;
+}
+.card:hover .image-container-4{
+  height: 1100px;
+}
+
+
+.image-container-5{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 0.6s ease;
+}
+.assigno-image{
+  object-fit: contain;
+  width: 360px;
+  height: auto;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.card:hover .image-container-5{
+  height: 1100px;
+}
+
+
+.image-container-6{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 0.6s ease;
+}
+.nexus-image{
+  object-fit: contain;
+  width: 360px;
+  height: auto;
+  z-index: 1;
+}
+.card:hover .image-container-6{
+  height: 1200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .neon-button{
+    margin-left: 7vw;
+    padding: 0.25em 1em;
+  }
+  .portfolio-container{
+    margin-bottom: -13vh;
+    padding-bottom: 20vh;
+  }
+  .cont2{
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .blogger-heading{
+    font-size: 4em;
+    padding-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .change{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    padding-right: 3.5em;
+    align-items: flex-end;
+    border: none;
+  }
+  .portfolio-container{
+    margin-bottom: -5vh;
+  }
+  .icon-description{
+    opacity: 1;
+  }
+
+  .blog-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .neon-container{
+    margin-bottom: 15em;
+    padding-top: 10vh;
+  }
+  .neon-button{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    white-space: wrap;
+  }
+  .about{
+    font-size: 4.4em;
+  }
+  .about-title{
+    height: 9em;
+  }
+  .about-title-again{
+    height: 9em;
+  }
+  .about-text{
+    font-size: 1em;
+  }
+  .blockquote__text{
+    font-size: 5vh;
+  }
+  .blockquote__text--credit{
+    font-size: 3vh;
+  }
+  .social-icons{
+    height: 6.5em;
+    width: 6.5em;
+  }
+  .cont2{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .linkedin{
+    margin-left: 4em;
+  }
+  .me-black-n-white{
+    opacity: 0;
+  }
+  .container-for-my-skills{
+    align-items: left;
+    margin-left: -50vw;
+  }
+  .half-white-green{
+    height: 95vh;
+  }
+  .blogger-heading{
+    font-size: 3em;
+    padding-left: 1vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

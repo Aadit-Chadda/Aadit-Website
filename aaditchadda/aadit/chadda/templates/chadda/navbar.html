@@ -1,0 +1,22 @@
+{% load static %}
+
+<div id="navigation">
+    <div id="menu" onclick="onClickMenu()">
+        <div class="bar-a" id="bar1"></div>
+        <div class="bar-a" id="bar2"></div>
+        <div class="bar-a" id="bar3"></div>
+    </div>
+    <ul class="nav" id="nav">
+        <li class="list-items-a"><a href="#about"><div class="icon-description" id="first-text">About Me  </div><img id="first-icon" class="nav-icons-a" src="{% static 'images/nav-logo/profile-user.png' %}"></a></li>
+        <li class="list-items-b"><a href="#half-black-green"><div class="icon-description" id="second-text">Contact Me</div><img class="nav-icons-a" src="{% static 'images/nav-logo/phone.png' %}"></a></li>
+        <li class="list-items-c"><a href="{% url  'blogs' %}"><div class="icon-description" id="third-text">Blogs     </div><img class="nav-icons-a" src="{% static 'images/nav-logo/blog.png' %}"></a></li>
+    </ul>
+</div>
+
+
+<script>
+    function onClickMenu(){
+        document.getElementById("menu").classList.toggle("icon")
+        document.getElementById("nav").classList.toggle("change")
+    }
+</script>
