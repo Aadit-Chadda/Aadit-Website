@@ -7,11 +7,14 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
-import os
+import os, sys
+sys.path.append("/Users/aadit/Documents/GitHub/Aadit-Website/aaditchadda/aadit")
+sys.path.append("/Users/aadit/DjangoVenv")
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aadit.settings')
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aadit.settings')
 
 application = get_wsgi_application()
 
